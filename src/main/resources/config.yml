@@ -94,8 +94,8 @@ recipes:
   ## The following five settings determine whether the listed items are craftable, able to be picked up, or able to be interacted with in an inventory
   helmets-unobtainable: true
   bookshelves-unobtainable: true
-  netherite-unobtainable: false
-  golden-apples-unobtainable: false
+  netherite-unobtainable: true
+  golden-apples-unobtainable: true
   enchanted-golden-apples-unobtainable: true
 
   ## Creates a new recipe for tnt which replaces most of the gunpowder required with paper
