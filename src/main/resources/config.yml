@@ -24,11 +24,11 @@ timer:
 boogeyman:
   ## The amount of time it takes for the boogeyman to actually be rolled
   ## after running the command
-  roll-delay-in-minutes: 10
+  roll-delay-in-minutes: 5
 
   ## Determines whether reminders will be sent out to everyone.
   ## I recommend disabling this if the roll-delay-in-minutes is set to less than 10.
-  reminders: true
+  reminders: false
 
   ## The maximum and minimum amount of boogeymen that are able to be chosen
   ## Set both to the same value to force a certain amount
@@ -92,10 +92,10 @@ name-colour-thresholds:
 ## Please note that the following settings only get applied while in survival mode. ###################### !!! ######################
 recipes:
   ## The following five settings determine whether the listed items are craftable, able to be picked up, or able to be interacted with in an inventory
-  helmets-unobtainable: true
+  helmets-unobtainable: false
   bookshelves-unobtainable: true
-  netherite-unobtainable: false
-  golden-apples-unobtainable: false
+  netherite-unobtainable: true
+  golden-apples-unobtainable: true
   enchanted-golden-apples-unobtainable: true
 
   ## Creates a new recipe for tnt which replaces most of the gunpowder required with paper
@@ -169,11 +169,11 @@ potion-whitelist:
 ## Setting a value to null will disable the sound effect
 sound-effects:
   enabled: true
-  boogeyman-chosen: ENTITY_ENDER_DRAGON_GROWL
+  boogeyman-chosen: ENTITY_ELDER_GUARDIAN.CURSE
   boogeyman-failed: ENTITY_ENDER_DRAGON_GROWL
-  boogeyman-cured: ENTITY_VILLAGER_YES
-  boogeyman-not-chosen: ENTITY_VILLAGER_YES
-  countdown: BLOCK_NOTE_BLOCK_HAT
+  boogeyman-cured: ENTITY_ARROW.HIT_PLAYER
+  boogeyman-not-chosen: ENTITY_EXPERIENCE_ORB.PICKUP
+  countdown: BLOCK_NOTE_BLOCK.BASS
   timer-begun: ITEM_GOAT_HORN_SOUND_2
 
 
